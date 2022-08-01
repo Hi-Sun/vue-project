@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Login from '@/components/Login';
+import SimpleLogin from '@/components/SimpleLogin';
+import BubbleLogin from '@/components/BubbleLogin';
 import ForgetPwd from '@/components/ForgetPwd';
 import Register from '@/components/Register';
 import Bubble from '@/components/Bubble';
@@ -11,8 +12,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Login',
-      component: Login,
+      name: 'SimpleLogin',
+      component: SimpleLogin,
+    },
+    {
+      path: '/bubble-login',
+      name: 'BubbleLogin',
+      component: BubbleLogin,
     },
     {
       path: '/forgetpwd',
