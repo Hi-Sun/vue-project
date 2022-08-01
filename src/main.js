@@ -4,6 +4,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import './assets/bubble.css';
 
 /** 引入elementUI */
 import ElementUI from 'element-ui';
